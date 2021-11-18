@@ -43,10 +43,17 @@ export const FormContainer = styled.form`
 `;
 
 export const CardsContainer = styled.form`
-  background-color: red;
+  background-color: gainsboro;
   border: 2px solid;
   padding: 10px;
 
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 480px) {
+    padding: 20px;
+  }
+  @media only screen and (min-width: 720px) {
+    padding: 40px;
+  }
+  @media only screen and (min-width: 720px) {
+    padding: 60px;
   }
 `;

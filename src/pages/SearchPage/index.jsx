@@ -2,7 +2,7 @@ import { SearchPageContainer, FormContainer, CardsContainer } from "./styles";
 import { useState } from "react";
 import api from "../../services";
 import Card from "../../Componets/Card";
-import Display from "../../Componets/Display/index";
+import Notify from "../../Componets/Notify";
 import { FaGithubAlt } from "react-icons/fa";
 
 const SearchPage = () => {
@@ -44,7 +44,7 @@ const SearchPage = () => {
         />
       </FormContainer>
 
-      {status && <Display status={status} setStatus={setStatus} />}
+      {status && <Notify status={status} setStatus={setStatus} />}
 
       <CardsContainer>
         {listResult.map((result) => (
