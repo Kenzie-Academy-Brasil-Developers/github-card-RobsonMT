@@ -3,7 +3,7 @@ import { useState } from "react";
 import api from "../../services";
 import Card from "../../Componets/Card";
 import Notify from "../../Componets/Notify";
-import { FaGithubAlt } from "react-icons/fa";
+import { GoMarkGithub } from "react-icons/go";
 
 const SearchPage = () => {
   const [listResult, setListResult] = useState([]);
@@ -27,7 +27,7 @@ const SearchPage = () => {
     <SearchPageContainer>
       <header>
         <h2>Github card</h2>
-        <FaGithubAlt className="logo" />
+        <GoMarkGithub className="logo" />
       </header>
 
       <FormContainer>

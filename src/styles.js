@@ -8,7 +8,4 @@ export const AppContainer = styled.div`
   align-items: center;
   justify-content: center;
   color: rgb(0, 0, 0);
-
-  @media screen and (min-width: 900px) {
-  }
 `;

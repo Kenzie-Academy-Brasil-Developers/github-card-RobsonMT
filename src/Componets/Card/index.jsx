@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { CardContainer } from "./styles";
-import { BiLink } from "react-icons/bi";
-// import { BsChevronCompactRight } from "react-icons/bs";
+import { FaLink } from "react-icons/fa";
 
 const Card = ({ key, result }) => {
   return (
     <CardContainer key={key}>
       <figure>
         <img
+          className="animated"
           src={result.organization.avatar_url}
           alt={result.organization.login}
         />
@@ -18,7 +18,7 @@ const Card = ({ key, result }) => {
       </div>
       <span>
         <Link to={{ pathname: result.html_url }} target="_blank">
-          <BiLink className="anchor" />
+          <FaLink className="anchor" />
         </Link>
       </span>
     </CardContainer>
